@@ -1,5 +1,5 @@
 class GrpcClient < Formula
-    desc "A GRPC client to query the server"
+    desc "Homebrew Package for a GRPC client to query the server"
     homepage "https://bhagwati-web.github.io/homebrew-grpc-client"
     url "https://github.com/bhagwati-web/grpc-client/releases/download/0.0.2/grpc-client-0.0.2.jar"
     sha256 "445b375ebe3eb92f19322234dd3ab0fa0bbe6e2ca87dcaf757f7979c8c398be6"
