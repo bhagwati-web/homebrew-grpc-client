@@ -4,11 +4,12 @@ class GrpcClient < Formula
   
   version "1.0.0"
   @@jar_file = "grpc-client-#{version}.jar"
+  @@sha256 = "a0c2e0a27b256bfba3b355b643006253465977ce0b7d935bfb3ce92b6e615613"
   @@server_url = "http://localhost:8080"
   @@server_port = "50051"
 
   url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/#{@@jar_file}"
-  sha256 "c42d886d16f1b6deadab3de714b94cfa75ad6fc9bd66312253aca7552fc16a17"
+  sha256 @@sha256
   license "MIT"
 
   depends_on "openjdk@17"
