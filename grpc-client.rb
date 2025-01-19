@@ -19,8 +19,6 @@ class GrpcClient < Formula
     libexec.install @@jar_file
     (bin/"grpcstart").write <<~EOS
       #!/bin/bash
-      export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-      export PATH=$JAVA_HOME/bin:$PATH
 
       # Start the GRPC client
       exec java -jar #{libexec}/#{@@jar_file} start "$@"
