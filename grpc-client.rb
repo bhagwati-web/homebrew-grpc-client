@@ -17,7 +17,7 @@ class GrpcClient < Formula
 
   def install
     libexec.install @@jar_file
-    (bin/"grpc-start").write <<~EOS
+    (bin/"grpcstart").write <<~EOS
       #!/bin/bash
       exec java -jar #{libexec}/#{@@jar_file} start "$@"
       
@@ -31,7 +31,7 @@ class GrpcClient < Formula
         open "#{@@server_url}"
       fi
     EOS
-    (bin/"grpc-stop").write <<~EOS
+    (bin/"grpcstop").write <<~EOS
       #!/bin/bash
       exec lsof -t -i:#{@@server_port} | xargs kill -9 "$@"
     EOS
