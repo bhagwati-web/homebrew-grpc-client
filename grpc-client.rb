@@ -2,7 +2,7 @@ class GrpcClient < Formula
   desc "Homebrew Package for a GRPC client to query the server"
   homepage "https://bhagwati-web.github.io/homebrew-grpc-client"
   
-  version "1.2.1"
+  version "1.2.0"
   @@jar_file = "grpc-client-#{version}.jar"
   @@sha256 = "fe669f385134df087c93f7d91cf3fddb3f5e2de40fcacafad203bb307fa03356"
   @@server_port = "50051"
