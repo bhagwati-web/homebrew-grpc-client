@@ -2,7 +2,7 @@ class GrpcClient < Formula
   desc "Homebrew Package for a GRPC client to query the server"
   homepage "https://bhagwati-web.github.io/homebrew-grpc-client"
   
-  version "1.2.0"
+  version "1.2.1"
   @@jar_file = "grpc-client-#{version}.jar"
   @@sha256 = "fe669f385134df087c93f7d91cf3fddb3f5e2de40fcacafad203bb307fa03356"
   @@server_port = "50051"
@@ -39,7 +39,7 @@ class GrpcClient < Formula
   
   def post_install
     system "echo", "================================================"
-    system "echo", "GRPC Client installed. Use 'grpc-start' and 'grpc-stop' to manage the server."
+    system "echo", "GRPC Client installed. Use 'grpcstart' and 'grpcstop' to manage the server."
     system "echo", "The server will be available on #{@@server_url} and listening on port #{@@server_port}."
     system "echo", "================================================"
   end
