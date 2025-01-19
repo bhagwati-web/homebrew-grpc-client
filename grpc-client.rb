@@ -42,10 +42,10 @@ class GrpcClient < Formula
   end
   
   def post_install
-    system "echo", "\n\n\n================================================"
-    system "echo", "GRPC Client installed. Use 'grpcstart' and 'grpcstop' to manage the server."
-    system "echo", "If this doesn't work, please switch to java 17 and try again running above command."
-    system "echo", "The server will be available on #{@@server_url} and listening on port #{@@server_port}."
-    system "echo", "================================================\n\n\n"
+    puts "\n\n\n================================================"
+    puts "GRPC Client installed. Use 'grpcstart' and 'grpcstop' to manage the server."
+    puts "If this doesn't work, please switch to Java 17 and try again running the above command."
+    puts "The server will be available on #{@@server_url} and listening on port #{@@server_port}."
+    puts "================================================\n\n\n"
   end
 end
