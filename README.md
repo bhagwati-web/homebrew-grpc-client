@@ -12,13 +12,13 @@ GRPC-client is a tool similar to Postman, designed to interact with gRPC servers
 1. **Clone the Repository**:
     ```sh
     brew tap bhagwati-web/grpc-client
-    Brew install grpc-client
+    brew install grpc-client
     ```
 
 2. **Run the Application**:
     Once everything good with above two command, you can start the application
     ```sh
-    grpc-start
+    grpcstart
     ```
 
 3. **Access the Application**:
@@ -27,7 +27,7 @@ GRPC-client is a tool similar to Postman, designed to interact with gRPC servers
 4. Stop the application
     Simple close the terminal where you have started the `grpc-start` command. If you see that application still running in background after closing the terminal, simply run the following command from terminal. 
     ```sh
-    grpc-stop
+    grpcstop
     ```
 
 
