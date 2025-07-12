@@ -29,6 +29,23 @@ GRPC-client is a tool similar to Postman, designed to interact with gRPC servers
     ```sh
     grpcstop
     ```
+5. **To Upgrade**:
+   ```sh
+    brew upgrade
+    ```
+   If above upgrade doesn't work then completly uninstall it first.  
+    ```sh
+    brew uninstall grpc-client
+    brew untap bhagwati-web/grpc-client
+    ```
+    And then install it like step 1.
+
+6. **Uninstallation**: 
+   If you are not happy and having bad experience with tool, please report. To uninstall it run the following commands.  
+    ```sh
+    brew uninstall grpc-client
+    brew untap bhagwati-web/grpc-client
+    ```
 
 
 
