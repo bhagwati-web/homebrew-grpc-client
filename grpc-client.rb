@@ -2,7 +2,7 @@ class GrpcClient < Formula
   desc "Homebrew Package for a GRPC client to query the server"
   homepage "https://bhagwati-web.github.io/homebrew-grpc-client"
   
-  version "1.2.2"
+  version "2.0.0"
   @@jar_file = "grpc-client-#{version}.jar"
   @@sha256 = "e43226769e3705036db8694cbba2662631ec7e237835f96d1be77ecb104f22df"
   @@server_port = "50051"
@@ -13,7 +13,6 @@ class GrpcClient < Formula
   license "MIT"
 
   depends_on "openjdk@17"
-  depends_on "grpcurl"
 
   def install
     libexec.install @@jar_file
