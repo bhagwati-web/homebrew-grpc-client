@@ -2,7 +2,7 @@ class GrpcClient < Formula
   desc "Homebrew Package for a GRPC client to query the server with integrated React UI"
   homepage "https://bhagwati-web.github.io/homebrew-grpc-client"
   
-  version "2.1.0"
+  version "2.0.2"
   @@server_port = "50051"
   @@server_url = "http://localhost:#{@@server_port}"
 
