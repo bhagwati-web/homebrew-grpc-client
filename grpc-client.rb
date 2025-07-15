@@ -8,16 +8,16 @@ class GrpcClient < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bhagwati-web/grpc-client/releases/download/v#{version}/grpc-client-darwin-amd64"
+      url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/grpc-client-darwin-amd64"
       sha256 "UPDATE_INTEL_SHA256" # Update when binary is built
     else
-      url "https://github.com/bhagwati-web/grpc-client/releases/download/v#{version}/grpc-client-darwin-arm64"
+      url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/grpc-client-darwin-arm64"
       sha256 "UPDATE_ARM64_SHA256" # Update when binary is built
     end
   end
 
   on_linux do
-    url "https://github.com/bhagwati-web/grpc-client/releases/download/v#{version}/grpc-client-linux-amd64"
+    url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/grpc-client-linux-amd64"
     sha256 "UPDATE_LINUX_SHA256" # Update when binary is built
   end
 
