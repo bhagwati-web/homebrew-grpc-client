@@ -2,23 +2,23 @@ class GrpcClient < Formula
   desc "Homebrew Package for a GRPC client to query the server with integrated React UI"
   homepage "https://bhagwati-web.github.io/homebrew-grpc-client"
   
-  version "3.1.0"
+  version "3.2.0"
   @@server_port = "50051"
   @@server_url = "http://localhost:#{@@server_port}"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/grpc-client-darwin-amd64"
-      sha256 "1b5363f520852baa7c153b0f0f6a228638301d980956a9f785a4475336919289" # Update when binary is built
+      sha256 "28d04bb5f80c65ea9ae23a8423ed48114235a85b5b2aa78e80e091bce98fc700" # Update when binary is built
     else
       url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/grpc-client-darwin-arm64"
-      sha256 "09c3d1dc3809ee798cba4d5325289b91b4ce65b690da2083644c2641180c18a1" # Update when binary is built
+      sha256 "a39999282b175c68d02f5d5e7c76e9bb64883ae7ae97f57ccccdd2f0e9788757" # Update when binary is built
     end
   end
 
   on_linux do
     url "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}/grpc-client-linux-amd64"
-    sha256 "3d5e5e283e404c0eac334fb3ea558b66c96e740a0d0778e008693ac2c4a5bc2a" # Update when binary is built
+    sha256 "4d3fbd3feffb5a6c700b8e2257b0976cf4c5081d411d0d2a5f70abb700544ccb" # Update when binary is built
   end
 
   license "MIT"
