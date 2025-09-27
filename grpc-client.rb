@@ -3,7 +3,7 @@ class GrpcClient < Formula
   homepage "https://bhagwati-web.github.io/grpc-client/"
   license "MIT"
   version "0.0.1"
-  @@repository "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}"
+  @@repository = "https://github.com/bhagwati-web/grpc-client/releases/download/#{version}"
   @@server_port = "50051"
   @@server_url = "http://localhost:#{@@server_port}"
 
